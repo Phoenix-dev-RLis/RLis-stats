@@ -1,5 +1,5 @@
 const ID_client = "781828046792-73342ej98s4r81mh7au8hrgrui7mt1cf.apps.googleusercontent.com"
-const URL_de_redirection = "http://127.0.0.1:5500/callback.html"
+const URL_de_redirection = https://rlis-stats.vercel.app/
 let url = "";
 let params = "";
 let autentification = localStorage.getItem("autentification");
