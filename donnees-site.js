@@ -27,7 +27,7 @@ async function obtenirToken(code,ID_client,URL_de_redirection) {;
     params = {
         code: code,
         client_id: ID_client,
-        client_secret: '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',
+        client_secret: prompt("you know"),
         redirect_uri: URL_de_redirection,
         grant_type: "authorization_code"
     };
