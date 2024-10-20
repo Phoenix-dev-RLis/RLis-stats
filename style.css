@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond de la page */
+    margin: 0;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+    list-style-type: none;
+}
+
+
+.list-site-visible {
+    position: relative;
+    border-radius: 0px; /* ne Arrondir pas les coins */
+    top: 10px;
+    left : 250px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin: 0px 0; /* Espace entre les éléments */
+    cursor: pointer;
+    color: black;
+    background-color: #fff; /* Couleur de fond blanche */
+    transition: background-color 0.3s; /* Transition pour un effet au survol */
+    overflow-y: auto;
+    max-height: 200px;
+    width: 300px;
+}
+
+.list-site-visible:hover {
+    background-color: #e0e0e0; /* Couleur de fond au survol */
+}
+
+.mySite {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    border-radius: 5px; /* Arrondir les coins */
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin: 0px 0; /* Espace entre les éléments */
+    cursor: pointer;
+    color: white;
+    background-color: rgb(56, 56, 236); /* Couleur de fond bleue */
+    transition: background-color 0.3s; /* Transition pour un effet au survol */
+}
+
+.mySite:hover {
+    background-color: rgb(30, 30, 200); /* Couleur de fond au survol */
+}
+
+ul li{
+    list-style-type: none;
+    padding: 0;
+}
