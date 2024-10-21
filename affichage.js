@@ -1,8 +1,8 @@
 function actualiserMenuSites(urlUser) {
     let i = 1;
     if (document.getElementsByClassName("liste-site-visible").length===0) {
-        document.querySelector("#button-home-page").classList.remove("hidden");
-        document.querySelector("#button-home-page").classList.add("liste-site-visible");
+        document.querySelector("#home-page").classList.remove("hidden");
+        document.querySelector("#home-page").classList.add("liste-site-visible");
         urlUser.forEach(element => {
             if (document.querySelector("#list-site").innerText.includes(element)) {
             //sauter l'itération si l'url est déjà dans la liste
@@ -25,8 +25,8 @@ function actualiserMenuSites(urlUser) {
     } else if (document.getElementsByClassName("liste-site-visible").length>0) {
         urlUser.forEach(element => {
                 if (document.querySelector(("#site-"+i))) {
-                document.querySelector("#button-home-page").classList.remove("liste-site-visible");
-                document.querySelector("#button-home-page").classList.add("hidden");
+                document.querySelector("#home-page").classList.remove("liste-site-visible");
+                document.querySelector("#home-page").classList.add("hidden");
                 document.querySelector("#list-site-ul").classList.remove("liste-site-visible");
                 document.querySelector("#list-site-ul").classList.add("hidden");
                 document.querySelector("#button-"+i).classList.remove("list-site-visible");
